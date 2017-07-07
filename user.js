@@ -8,4 +8,4 @@ User.prototype.hello = function (who) {
 
 console.log('user.js is required!');
 
-exports.User = User;
+global.User = User; // можно, но не нужно. Объект global на практике почти не используется, так как можно обойтись без глобальных переменных.
