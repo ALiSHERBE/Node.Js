@@ -1,6 +1,6 @@
-require('./user');
+var user = require('./user');
 
-var vasya = new User('Вася');
-var petya = new User('Петя');
+var vasya = new user.User('Вася');
+var petya = new user.User('Петя');
 
 vasya.hello(petya);

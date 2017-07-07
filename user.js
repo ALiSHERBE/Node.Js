@@ -1,11 +1,13 @@
+var lang = require('./ru'); // сначало ищет ru.js потом ru.node и потом ru.json и потом ищет дирректорию /ru
+
 function User(name) {
     this.name = name;
 }
 
 User.prototype.hello = function (who) {
-    console.log('Hello, '+ who.name);
+    console.log(lang.Hello +", " + who.name);
 };
 
 console.log('user.js is required!');
 
-global.User = User; // можно, но не нужно. Объект global на практике почти не используется, так как можно обойтись без глобальных переменных.
+exports.User = User;
