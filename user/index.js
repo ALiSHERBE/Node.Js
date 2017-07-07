@@ -1,4 +1,4 @@
-var lang = require('./ru'); // сначало ищет ru.js потом ru.node и потом ru.json и потом ищет дирректорию /ru
+var lang = require('./ru');
 
 function User(name) {
     this.name = name;
