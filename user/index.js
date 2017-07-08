@@ -1,11 +1,12 @@
-var db = require('db');   // при указании пути сначала будет искать db.js и т.д. Потом будет искать дирректорию
+var db = require('db');
+var log = require('logger')(module);
 
 function User(name) {
     this.name = name;
 }
 
 User.prototype.hello = function (who) {
-    console.log(db.getLang('Hello') +", " + who.name);
+    log(db.getLang('Hello') +", " + who.name);
 };
 
 module.exports = User;
