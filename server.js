@@ -1,3 +1,6 @@
+var db = require('db');     // уже без указания пути к дирректории. Теперь node будет уже искать в node_modules, если не найдет будет искать выше и выше ../node_modules 
+db.connect();
+
 var User = require('./user');
 
 function run() {

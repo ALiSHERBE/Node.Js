@@ -1,5 +1,4 @@
-var db = require('../db');
-db.connect();
+var db = require('db');   // при указании пути сначала будет искать db.js и т.д. Потом будет искать дирректорию
 
 function User(name) {
     this.name = name;
